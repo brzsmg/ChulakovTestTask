@@ -20,5 +20,5 @@ class SearchResults<T> (
 )
 ```
 
-<a href='https://chulakov.ru/career/android-razrabotchik'>Android-разработчик</a>
-<a href='https://docs.google.com/document/d/1mldQnn-hJFgoAsJxkc6qK4LoZrYgrgNORgowgu89uaE/edit#heading=h.vu5hxkilunde'>Работа с Github API</a>
+<p><a href='https://chulakov.ru/career/android-razrabotchik'>Android-разработчик</a></p>
+<p><a href='https://docs.google.com/document/d/1mldQnn-hJFgoAsJxkc6qK4LoZrYgrgNORgowgu89uaE/edit#heading=h.vu5hxkilunde'>Работа с Github API</a></p>
