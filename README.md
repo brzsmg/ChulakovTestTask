@@ -1,7 +1,7 @@
 # Test task for Chulakov
 
 Operations:
-<p><b>GET</b> /search/users</p>
+<p><b>GET</b> /search/users <b>(page, per_page)</b></p>
 <p><b>GET</b> /users/{login} <b>(page, per_page, q)</b></p>
 
 <div style="display:flex;">
