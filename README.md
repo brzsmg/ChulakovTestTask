@@ -1,9 +1,9 @@
-# Test task for Sebbia
+# Test task for Chulakov
 
 Operations:
-<p><b>GET</b> /v1/news/categories</p>
-<p><b>GET</b> /v1/news/categories/{id}/news</p>
-<p><b>GET</b> /v1/news/details</p>
+Operations:
+<p><b>GET</b> <u>/search/users</u></p>
+<p><b>GET</b> <u>/users/{login}</u> (page, per_page, q)</p>
 
 <div style="display:flex;">
 <img alt="image 1" src="documents/screenshots/user_list.jpg" width="45%">
@@ -21,4 +21,4 @@ class SearchResults<T> (
 ```
 
 <p><a href='https://chulakov.ru/career/android-razrabotchik'>Android-разработчик</a></p>
-<p><a href='https://docs.google.com/document/d/1mldQnn-hJFgoAsJxkc6qK4LoZrYgrgNORgowgu89uaE/edit#heading=h.vu5hxkilunde'>Работа с Github API</a></p>
+<p><a href='https://docs.google.com/document/d/1mldQnn-hJFgoAsJxkc6qK4LoZrYgrgNORgowgu89uaE/'>Работа с Github API</a></p>
