@@ -150,7 +150,7 @@ class UserListFragment : Fragment() {
         if(loading) {
             return
         }
-        if(waitTime > DateTime().time) {
+        if(waitTime > DateTime().timestamp) {
             return //TODO: это не поможет, если время расходиться
         }
         waitTime = 0
