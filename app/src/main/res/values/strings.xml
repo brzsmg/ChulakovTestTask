@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">ChulakovTestTask</string>
-    <string name="empty" />
+    <string name="empty" translatable="false" />
+    <string name="login">Login</string>
 </resources>

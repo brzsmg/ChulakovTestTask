@@ -1,4 +1,4 @@
-package ru.chulakov.brzsmg.testtask.Model
+package ru.chulakov.brzsmg.testtask.models
 
 import com.sebbia.brzsmg.testtask.types.DateTime
 import java.io.Serializable
@@ -10,7 +10,7 @@ class User (
     val id : Int,
     val type : String?,
     val login : String,
-    val name : Any?,
+    val name : String?,
     val avatar_url : String?,
     val url : String?,
     val html_url : String,

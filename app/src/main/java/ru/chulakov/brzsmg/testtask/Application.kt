@@ -9,6 +9,7 @@ import retrofit2.Retrofit
 import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory
 import retrofit2.converter.gson.GsonConverterFactory
 import ru.chulakov.brzsmg.testtask.server.GitHubApi
+import ru.chulakov.brzsmg.testtask.utils.Json
 import java.util.concurrent.TimeUnit
 
 val AppCompatActivity.app : Application
@@ -22,30 +23,28 @@ val Fragment.app : Application
  */
 class Application : android.app.Application() {
 
+    companion object {
+        private lateinit var mInstance : Application
+        fun getInstance(): Application {
+            return mInstance
+        }
+    }
+
+    private lateinit var mHsHttpClient: OkHttpClient
     private lateinit var mGitHubApi : GitHubApi
 
-    private var hsHttpClient: OkHttpClient? = null
-
     override fun onCreate() {
+        mInstance = this
         super.onCreate()
         Stetho.initializeWithDefaults(this)
-        val auth_login = "login"
-        val auth_password = "unknown"
-        hsHttpClient = OkHttpClient.Builder()
-            /*.authenticator { route, response ->
-                response
-                    .request()
-                    .newBuilder()
-                    .header("Authorization", Credentials.basic(auth_login, auth_password))
-                    .build()
-            }*/
+        mHsHttpClient = OkHttpClient.Builder()
             .addNetworkInterceptor(StethoInterceptor())
             .connectTimeout(4, TimeUnit.SECONDS)
             .readTimeout(4, TimeUnit.SECONDS)
             .retryOnConnectionFailure(false)
             .build()
         val retrofit = Retrofit.Builder()
-            .client(hsHttpClient)
+            .client(mHsHttpClient)
             .baseUrl("https://api.github.com")
             .addConverterFactory(GsonConverterFactory.create(Json.gson))
             .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
@@ -53,8 +52,14 @@ class Application : android.app.Application() {
         mGitHubApi = retrofit.create(GitHubApi::class.java)
     }
 
+    val hsHttpClient: OkHttpClient
+        get() {
+            return mHsHttpClient
+        }
+
     val gitHubApi: GitHubApi
         get() {
             return mGitHubApi
         }
+
 }

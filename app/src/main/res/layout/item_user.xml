@@ -24,7 +24,9 @@
             android:layout_height="wrap_content"
             android:textSize="18sp"
             android:layout_marginStart="10dp"
-            tools:text="Категория" />
+            tools:text="Категория"
+            style="@style/TextNormal"
+            />
     </LinearLayout>
 
 </LinearLayout>

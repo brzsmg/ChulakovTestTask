@@ -17,4 +17,17 @@
         <item name="android:background">@drawable/bg_list_card</item>
     </style>
 
+    <style name="TextNormal">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="DetailsName" parent="TextNormal">
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="DetailsLogin">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColorLink">@color/colorLink</item>
+    </style>
+
 </resources>

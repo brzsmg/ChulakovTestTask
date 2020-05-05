@@ -1,4 +1,4 @@
-package ru.chulakov.brzsmg.testtask.Model
+package ru.chulakov.brzsmg.testtask.models
 
 /**
  * Результаты поиска на GitHub.

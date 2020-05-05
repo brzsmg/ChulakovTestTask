@@ -14,16 +14,16 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
-
         <EditText
             android:id="@+id/search_login"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:ems="10"
-            android:hint="Логин"
+            android:hint="@string/login"
             android:inputType="text"
-            tools:ignore="TextFields" />
+            tools:ignore="TextFields"
+            android:autofillHints="login" />
     </com.google.android.material.textfield.TextInputLayout>
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/list"

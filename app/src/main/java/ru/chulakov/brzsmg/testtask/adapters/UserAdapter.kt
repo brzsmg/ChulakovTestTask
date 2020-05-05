@@ -1,12 +1,11 @@
 package ru.chulakov.brzsmg.testtask.adapters
 
-import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import ru.chulakov.brzsmg.testtask.Model.User
+import ru.chulakov.brzsmg.testtask.models.User
 import ru.chulakov.brzsmg.testtask.R
 
 /**
