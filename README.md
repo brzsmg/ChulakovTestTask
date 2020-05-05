@@ -25,6 +25,7 @@
 
 
 <h3>Entities</h3>
+
 ```kotlin
 class SearchResults<T> (
     val total_count : Int,
