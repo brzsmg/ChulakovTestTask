@@ -13,7 +13,7 @@
 
 <h2>Screenshots</h2>
 <p>Screenshots in full resolution.</p>
-<h3>Portrait </h3>
+<h3>Portrait</h3>
 <div style="display:flex;">
 <img alt="image 1" src="documents/screenshots/user_list.jpg" width="45%">
 <img alt="image 2" src="documents/screenshots/user_details.jpg" width="45%">
